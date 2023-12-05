@@ -2,7 +2,16 @@ import React from 'react';
 
 function Test() {
     return (
-        <div>Test</div>
+        <div>
+            <Box>
+                <Autocomplete sx={{ width: 300 }}
+                    options={state} renderInput={(params) => (
+                        <TextField {...params} label="List of States"
+                        />
+                    )}
+                />
+            </Box>
+        </div>
     )
 }
 
